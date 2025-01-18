@@ -23,7 +23,7 @@ Template Name: Strona Główna
                     <h1>Leading the way in accurate color measurement solutions for every industry</h1>
                 </div>
                 <div class="section-text">
-                    <p>3Color's® devices feature the best optical purity, efficiency, and color measurement accuracy.</p>
+                    <h3>3Color's® devices feature the best optical purity, efficiency, and color measurement accuracy.</h3>
                 </div>
             </div>
         </div>
@@ -32,10 +32,20 @@ Template Name: Strona Główna
     <a href="#" class="button-learn">Learn more about 3Color</a>
     </div>
 </section>
-<section class="two">
+<section class="section-our-story">
     <div class="section-content">
         <div class="section-title">
-        <h2>test</h2>
+            <h2>OUR STORY</h2>
+        </div>
+        <div class="section-subtitle">
+            <h3>At 3Color®, we specialize in providing state-of-the-art color measurement solutions that ensure accuracy, consistency, and reliability.</h3>
+        </div>
+        <div class="section-block">
+            <div class="column-left"></div>
+            <div class="column-right">
+                <div class="col-wew-left"></div>
+                <div class="col-wew-right"></div>
+            </div>
         </div>
     </div>
 </section>

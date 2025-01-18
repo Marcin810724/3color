@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "Exo 2";
-  src: url("../fonts/Exo2-Regular.ttf") format("truetype");
+  src: url("/wp-content/themes/3color/assets/src/fonts/Exo2-Regular.ttf")
+    format("truetype");
   font-weight: 400; /* Regular */
   font-style: normal;
   font-display: swap;
@@ -14,7 +15,8 @@
 
 @font-face {
   font-family: "Exo 2";
-  src: url("../fonts/Exo2-Medium.ttf") format("truetype");
+  src: url("/wp-content/themes/3color/assets/src/fonts//Exo2-Medium.ttf")
+    format("truetype");
   font-weight: 500; /* Medium */
   font-style: normal;
   font-display: swap;
@@ -22,7 +24,8 @@
 
 @font-face {
   font-family: "Exo 2";
-  src: url("../fonts/Exo2-SemiBold.ttf") format("truetype");
+  src: url("/wp-content/themes/3color/assets/src/fonts/Exo2-SemiBold.ttf")
+    format("truetype");
   font-weight: 600; /* SemiBold */
   font-style: normal;
   font-display: swap;
@@ -411,7 +414,7 @@ header {
         ul {
           li {
             a {
-              color: $mainblack !important;
+              color: $black !important;
             }
           }
         }

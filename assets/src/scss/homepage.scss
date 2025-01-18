@@ -90,3 +90,58 @@
     }
   }
 }
+
+section.section-our-story {
+  padding: 150px 0 170px;
+  .section-title {
+    max-width: 804px;
+    margin: 0 auto 30px;
+    h2 {
+      font-size: 16px;
+      text-align: center;
+      color: $maingray;
+      font-weight: 600;
+    }
+  }
+  .section-subtitle {
+    max-width: 804px;
+    margin: 0 auto 100px;
+    h3 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
+      color: $lightblack;
+    }
+  }
+  .section-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .column-left {
+      width: 50%;
+      height: 550px;
+      border-radius: 55px;
+      background-color: bisque;
+    }
+    .column-right {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      min-height: 400px;
+      position: absolute;
+      right: 0;
+
+      .col-wew-left,
+      .col-wew-right {
+        width: calc(50% - 15px);
+        background-color: $mainred;
+        border-radius: 55px 55px 0px 0px;
+        &:first-child {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
