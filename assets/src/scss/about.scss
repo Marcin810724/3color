@@ -1,0 +1,345 @@
+@import "./custom-styles";
+
+
+
+.title-H1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 5px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width:1600px) {
+        font-size: 50px;
+    }
+
+    @media (max-width:700px) {
+        font-size: 38px;
+        line-height: 43px;
+    }
+}
+
+.title-h2 {
+    font-size: 34px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 60px;
+
+    @media (max-width:700px) {
+        font-size: 28px;
+    }
+}
+
+.title-h3 {
+    font-size: 22px;
+
+    @media (max-width:700px) {
+        font-size: 20px;
+    }
+}
+
+.title-h4 {
+    font-size: 20px;
+    opacity: .85;
+    color: black;
+
+    @media (max-width:700px) {
+        font-size: 18px;
+    }
+}
+
+
+
+#about {
+    section.section-about-leasing {
+        margin-top: 150px;
+        padding-bottom: 60px;
+        text-align: left;
+
+        @media(max-width:1200px) {
+            margin-top: 90px;
+        }
+
+        .block {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+
+            @media(max-width:1200px) {
+                flex-direction: column;
+            }
+
+            .left {
+                width: 66.64%;
+                padding-left: 15px;
+
+                @media(max-width:1200px) {
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            .right {
+                width: 33.36%;
+                padding-left: 15px;
+
+                @media(max-width:1200px) {
+                    padding-left: 0;
+                    width: 100%;
+                    margin-top: 60px;
+                }
+
+                .logotype {
+
+                    .section-fundusz__logo {
+                        margin-right: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        @media(max-width:1200px) {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            justify-content: center;
+                        }
+
+                        .logo-item {
+                            margin-bottom: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @media(max-width:1200px) {
+                                margin: 0 7px 15px 7px;
+                            }
+
+                            img {
+                                max-width: 150px;
+                                width: 150px;
+                                height: auto;
+
+                                @media(max-width:1200px) {
+                                    max-width: 180px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .rank-math-breadcrumb {
+            margin-bottom: 30px;
+
+            p {
+                font-weight: 600;
+                opacity: 1;
+                margin-bottom: 0;
+
+                a {
+                    color: #031646;
+                }
+            }
+        }
+
+        .section-about-leasing__title {
+            margin-bottom: 70px;
+
+            @media(max-width:1200px) {
+                margin-bottom: 30px;
+            }
+
+            .title-H1 {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+
+        .section-about-leasing__text {
+            p {
+                opacity: .8;
+
+                a {
+                    color: $mainblue;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        &.bis {
+            margin-top: 80px;
+        }
+    }
+
+
+
+
+
+    section.person {
+        .list-person {
+            h2 {
+                margin-bottom: 30px;
+
+                @media(max-width:1200px) {
+                    text-align: center;
+                }
+            }
+
+            .blocks {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 120px;
+                flex-wrap: wrap;
+
+                @media(max-width:1200px) {
+                    margin-bottom: 60px;
+                }
+
+                .cart {
+                    width: calc(33% - 15px);
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media(max-width:1200px) {
+                        width: calc(50% - 7.5px);
+                        margin-bottom: 30px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    @media(max-width:792px) {
+                        flex-direction: column;
+                    }
+
+                    @media(max-width:650px) {
+                        width: 100%;
+                    }
+
+                    .left {
+                        width: 50%;
+
+                        @media(max-width:792px) {
+                            width: 100%;
+                        }
+
+                        .img-person {
+                            width: 100%;
+                            height: 212px;
+
+                            @media(max-width:792px) {
+                                margin-bottom: 15px;
+                                height: 310px;
+                            }
+
+                            @media(max-width:650px) {
+                                width: 75%;
+                                height: 410px;
+                                margin: 0 auto 15px;
+                            }
+
+                            @media(max-width:500px) {
+                                width: 100%;
+                            }
+
+                            img {
+                                object-fit: cover;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .right {
+                        width: 50%;
+                        margin-left: 30px;
+
+                        @media(max-width:1200px) {
+                            margin-left: 15px;
+                        }
+
+                        @media(max-width:792px) {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+
+                        .meta {
+                            @media(max-width:650px) {
+                                text-align: center;
+                            }
+
+                            .rola {
+                                .title-h4 {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    margin-bottom: 15px;
+                                }
+                            }
+
+                            .name {
+                                .title-h3 {
+                                    margin-bottom: 15px;
+                                    color: $mainblue;
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .text {
+                                p {
+                                    line-height: 24px;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 5;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 15px;
+                                    font-size: 14px;
+                                    opacity: 1;
+                                    color: #36454F;
+                                }
+                            }
+                        }
+
+                        .social-list {
+                            display: flex;
+
+                            @media(max-width:650px) {
+                                justify-content: center;
+                            }
+
+                            a {
+                                margin-right: 20px;
+
+                                img {
+                                    max-width: 16px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+    }
+
+    .about-contact {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

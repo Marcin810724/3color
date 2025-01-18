@@ -1,0 +1,91 @@
+@use "./custom-variables" as *; // Wszystkie zmienne i funkcje będą dostępne bez prefiksu
+
+#homepage {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  .intro__media {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+      background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0)
+      );
+    }
+    .intro__media-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .section-intro-wrapper {
+    position: relative;
+    z-index: 10;
+    .column-left {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+
+      .section-title {
+        max-width: 655px;
+        h1 {
+          font-size: 60px;
+          color: $mainred;
+          margin-bottom: 50px;
+          line-height: 65px;
+          @media (max-width: 700px) {
+            line-height: normal;
+          }
+        }
+      }
+      .section-text {
+        max-width: 458px;
+        p {
+          color: #ffffff;
+          font-size: 25px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .button-bottom {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    max-width: 1640px;
+    left: 50%;
+    transform: translateX(-50%);
+    a.button-learn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 25px 50px;
+      color: #ffffff;
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px;
+      background-color: $mainred;
+      transition: 0.2s linear;
+      &:hover {
+        background-color: $mainredhover;
+      }
+    }
+  }
+}

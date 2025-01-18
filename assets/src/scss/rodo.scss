@@ -1,0 +1,51 @@
+.section-intro {
+    &__title {
+        margin: 30px 0px 80px 0px;
+
+        @media (max-width:500px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__content {
+        margin-bottom: 80px;
+
+        @media (max-width:500px) {
+            margin-bottom: 40px;
+        }
+        ul{
+            margin-top:30px;
+            list-style:none;
+            li {
+                    position: relative;
+                    margin-left:70px;
+                    margin-bottom:20px;
+                    @media (max-width:500px){
+                        margin-left:20px;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: url(/app/themes/ifl-new/assets/src/img/arr.png);
+                        left: -110px;
+                        top:20px;
+                        @media (max-width:500px){
+                            left:-60px;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+p,
+li {
+    font-size: 16px;
+    color: black;
+    opacity: .8;
+    font-weight: 300;
+
+    @media (max-width:700px) {
+        font-size: 14px;
+    }
+}
+
