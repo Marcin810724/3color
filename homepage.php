@@ -32,6 +32,13 @@ Template Name: Strona Główna
     <a href="#" class="button-learn">Learn more about 3Color</a>
     </div>
 </section>
+<section class="two">
+    <div class="section-content">
+        <div class="section-title">
+        <h2>test</h2>
+        </div>
+    </div>
+</section>
 </main>
 
 
